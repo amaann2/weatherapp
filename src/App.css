@@ -1,38 +1,227 @@
-.App {
-  text-align: center;
+.container {
+    display: flex;
+}
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Smoke {
+    background-image: url("/public/images/benjamin-sow-5JUONGJ-jRs-unsplash.jpg");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Haze {
+    background-image: url("/public/images/haze.jpg");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Rain {
+    background-image: url("/public/images/taqqy-rb-vw0hDAqkTWQ-unsplash.jpg");
 }
 
-.App-link {
-  color: #61dafb;
+.Snow {
+    background-image: url("/public/images/snow.jpg");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Fog {
+    background-image: url("/public//images/fog.jpg");
+}
+
+.Sun {
+    background-image: url("/public/images/clear\ cloud.jpg");
+
+}
+
+.Clouds {
+    background-image: url("/public/images/clouds.jpg");
+}
+
+.Clear {
+    background-image: url("/public/images/clear\ cloud.jpg");
+
+}
+
+.Mist {
+    background-image: url("/public//images/fog.jpg");
+
+}
+
+.home {
+    flex: 0.65;
+}
+
+.center {
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #212222;
+    color: white;
+    flex: 0.35;
+}
+.containerr {
+    margin-left: 5%;
+}
+
+.logo {
+    margin-left: 3%;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #262828;
+    width: 220px;
+    color: white;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.box {
+    margin-top: 35%;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #212222;
+    color: white;
+    border-radius: 25px;
+    height: 160px;
+    margin-right: 25px;
+}
+
+.data .temp {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 40px;
+}
+
+.info .city {
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 10;
+    font-weight: bold;
+
+}
+
+.info .time {
+    font-size: 16px;
+}
+
+.description .emoji {
+    font-size: 30px;
+}
+
+.description .type {
+    font-size: 16px;
+}
+
+
+/* sidebar search  */
+
+.form {
+    width: 80%;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.form .input {
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form .button {
+    width: 40px;
+    height: 33px;
+    border-radius: 5px;
+    margin-left: 2px;
+
+}
+
+
+.history-list li {
+    list-style: none;
+    line-height: 20px;
+    text-align: left;
+}
+
+.heading {
+    margin-left: 8%;
+}
+
+.detail {
+    margin: 0% 8% 3% 8%;
+    display: flex;
+    justify-content: space-around;
+}
+.left  p{
+    line-height: 35px;
+
+}
+.right  p{
+    line-height: 52px;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .home {
+        flex: .60;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .sidebar {
+        flex: .40;
+    }
+
+    .logo {
+        margin-left: 1%;
+        font-size: 20px;
+        padding: 10px;
+        background-color: #262828;
+        width: 150px;
+        color: white;
+        height: 40px;
+    }
+
+    .data {
+        flex-direction: column;
+        height: 400px;
+    
+    }
+    
+   
+    .form .input {
+        width: 60%;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .form .button {
+        width: 30px;
+        height:25px;
+        border-radius: 5px;
+    }
+    .detail {
+        margin: 5% 13% 0% 7%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .left  p{
+        line-height: 35px;
+    
+    }
+    .right  p{
+        line-height: 83px;
+        margin-left: 2px;
+    
+    }
+    
 }
